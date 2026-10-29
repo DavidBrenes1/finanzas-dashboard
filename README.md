@@ -1,12 +1,12 @@
-# 💰 Mis Finanzas — Dashboard de finanzas personales
+#  Mis Finanzas — Dashboard de finanzas personales
 
 Aplicación web para registrar ingresos y gastos, visualizar en qué se va el dinero y controlar presupuestos mensuales. Hecha con **React 19, TypeScript y Tailwind CSS**.
 
-**🔗 Demo en vivo:** _agrega aquí tu link_
+** Demo en vivo:** _agrega aquí tu link_
 
 ![Dashboard en modo claro](docs/light.png)
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - **Registro de movimientos** — formulario controlado con validación (descripción, monto, fecha, categoría).
 - **Resumen del periodo** — ingresos, gastos, balance y tasa de ahorro, filtrable por mes o historial completo.
@@ -23,7 +23,7 @@ Aplicación web para registrar ingresos y gastos, visualizar en qué se va el di
 |---|---|
 | ![Modo oscuro](docs/dark.png) | <img src="docs/mobile.png" width="260" alt="Vista móvil" /> |
 
-## 🛠️ Stack
+##  Stack
 
 | Área | Tecnología |
 |---|---|
@@ -34,7 +34,7 @@ Aplicación web para registrar ingresos y gastos, visualizar en qué se va el di
 | Tests | Vitest |
 | Linter | Oxlint |
 
-## 🧠 Decisiones técnicas
+##  Decisiones técnicas
 
 - **Lógica separada de la UI.** Todos los cálculos (resúmenes, agrupaciones, CSV) viven en `src/utils/finance.ts` como funciones puras, por eso tienen tests unitarios.
 - **Custom hooks.** `useTransactions` concentra el manejo de datos; `useLocalStorage` encapsula la persistencia con manejo de errores (modo privado, almacenamiento lleno); `useTheme` maneja el tema.
@@ -42,7 +42,7 @@ Aplicación web para registrar ingresos y gastos, visualizar en qué se va el di
 - **Tipado estricto.** Los tipos de `src/types.ts` impiden, por ejemplo, asignar una categoría que no existe.
 - **Accesibilidad.** Labels en todos los inputs, `aria-*` en barras de progreso y botones de ícono, y estados que nunca dependen solo del color.
 
-## 📁 Estructura
+##  Estructura
 
 ```
 src/
@@ -54,7 +54,7 @@ src/
 └── App.tsx         # Composición del dashboard
 ```
 
-## 🚀 Correr el proyecto
+##  Correr el proyecto
 
 ```bash
 npm install
@@ -63,7 +63,7 @@ npm test         # tests unitarios
 npm run build    # build de producción en /dist
 ```
 
-## 🗺️ Próximas mejoras
+##  Próximas mejoras
 
 - Autenticación y base de datos (Supabase) para sincronizar entre dispositivos.
 - Movimientos recurrentes (ej. alquiler cada mes).
