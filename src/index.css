@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* El modo oscuro se activa con la clase .dark en <html> (ver useTheme) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tokens de color: un solo lugar para claro y oscuro */
+@theme {
+  --color-page: #f9f9f7;
+  --color-surface: #fcfcfb;
+  --color-ink: #0b0b0b;
+  --color-ink-2: #52514e;
+  --color-muted: #6f6d68;
+  --color-line: #e1e0d9;
+  --color-brand: #2a78d6;
+  --color-brand-strong: #1c5cab;
+  --color-income: #2a78d6;
+  --color-expense: #eb6834;
+  --color-good: #006300;
+  --color-critical: #d03b3b;
+  --color-warning: #fab219;
+}
+
+:root {
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --grid: #e1e0d9;
+  --axis: #898781;
+  color-scheme: light;
+}
+
+.dark {
+  --color-page: #0d0d0d;
+  --color-surface: #1a1a19;
+  --color-ink: #f0efec;
+  --color-ink-2: #c3c2b7;
+  --color-muted: #9d9b95;
+  --color-line: #2c2c2a;
+  --color-brand: #3987e5;
+  --color-brand-strong: #5598e7;
+  --color-income: #3987e5;
+  --color-expense: #d95926;
+  --color-good: #0ca30c;
+  --color-critical: #e66767;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --grid: #2c2c2a;
+  --axis: #898781;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
