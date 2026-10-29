@@ -2,7 +2,7 @@
 
 Aplicación web para registrar ingresos y gastos, visualizar en qué se va el dinero y controlar presupuestos mensuales. Hecha con **React 19, TypeScript y Tailwind CSS**.
 
-** Demo en vivo:** _agrega aquí tu link_
+**Demo en vivo:** [finanzas-dashboard-gamma.vercel.app](https://finanzas-dashboard-gamma.vercel.app)
 
 ![Dashboard en modo claro](docs/light.png)
 
